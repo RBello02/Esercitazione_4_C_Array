@@ -64,20 +64,31 @@ int main()
     // fase di stampa
 
     ofstr << "S = "  <<fixed << setprecision(2)<< S <<", n = "<<n<< endl;
+    cout << "S = "  <<fixed << setprecision(2)<< S <<", n = "<<n<< endl;
+
     ofstr << "w = [ ";
+    cout << "w = [ ";
+
     for (unsigned int i = 0; i < n; i++)
     {
         ofstr << *(w+i) <<" ";
+        cout << *(w+i) <<" ";
     }
     ofstr << "]"<<endl;
+    cout << "]"<<endl;
     ofstr << "r = [ ";
+    cout << "r = [ ";
     for (unsigned int i = 0; i < n; i++)
     {
         ofstr << *(r+i) <<" ";
+        cout << *(r+i) <<" ";
     }
     ofstr << "]"<<endl;
+    cout << "]"<<endl;
     ofstr << "Rate of return of the portfolio: " <<fixed<< setprecision(4) << interesse <<endl;
+    cout << "Rate of return of the portfolio: " <<fixed<< setprecision(4) << interesse <<endl;
     ofstr <<"V: "<<fixed << setprecision(2)<<V;
+    cout <<"V: "<<fixed << setprecision(2)<<V<<endl;
 
     // fine programma
 
